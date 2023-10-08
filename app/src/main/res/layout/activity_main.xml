@@ -26,7 +26,7 @@
         android:text="문장 반영" />
 
     <TextView
-        android:id="@+id/reslutTxt"
+        android:id="@+id/resultTxt"
         android:layout_width="match_parent"
         android:layout_height="match_parent"
         android:gravity="center"

@@ -11,12 +11,18 @@ class MainActivity : AppCompatActivity() {
 
         val binding = ActivityMainBinding.inflate((layoutInflater))
         setContentView(binding.root)
-        binding.contentEdt
 
-        binding.okBtn
+//        확인버튼이 눌리면? 이벤트 달아주자.
 
-        binding.reslutTxt
+        binding.okBtn.setOnClickListener {
 
+//            입력된 내용? : content 의 text 의 값 조회 (get) 변수에 저장해두자.
+
+        val inputContent = binding.contentEdt.text.toString()
+
+        binding.resultTxt.text = inputContent
+
+        }
 
     }
 }
